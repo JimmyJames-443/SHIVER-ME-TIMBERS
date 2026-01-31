@@ -1,6 +1,57 @@
-#home{
-     background-color: indianred;
-     font-weight: 500;
-     font -size: 20px;
-     font-color: green;
+body {
+    background-image: url('assets/jim.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    margin: 0;
+}
+nav a {
+    color:#f5deb3
+}
+nav a:hover {
+    color: orange;
+    text-decoration: underline;
+}
+
+
+
+.greeting {
+    background: url('assets/wood.jpg') no-repeat center center / cover fixed;
+    font-family: Algerian, serif;
+    color: #f5deb3;
+text-shadow: 2px 2px 5px #000;
+
+    text-align: center;
+    font-size: xx-large;
+    width: 100%; 
+    padding: 50px 0; 
+}
+#navigations {
+    background-color: rgba(0, 0, 0, 0.2); 
+    padding: 15px;
+    text-align: center;
+    color: maroon;
+    text-align: left;
+}
+#hull {
+    color : #f5deb3 !important;
+    padding : 20px;
+    text-align: center;
+    font-family: old-standard-tt, serif;
+    font-size: large;
+    background-color: rgba(105, 185, 238, 0.3);
+    border-radius: 30px
+}
+button {
+    background-color: brown;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 15px;    
+
 }

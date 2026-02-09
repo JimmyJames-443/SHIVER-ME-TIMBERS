@@ -55,3 +55,27 @@ button {
     margin-bottom: 15px;    
 
 }
+#mast{
+    position: static;
+    color:#f5deb3;
+    font-family: old-standard-tt, serif;
+}
+#comment{
+    border-radius: 50px;
+    background-color: rgb(96, 96, 242, 0.5);
+    font-family: old-standard-tt, serif;
+    padding: 20px 30px;
+}
+#tbutton{
+    
+    border-radius: 90px;
+    
+    
+}
+#msg{
+
+    border-radius: 70px;
+    padding: 10px 20px;
+    color:#f5deb3;
+    background-color:rgba(33, 135, 229, 0.9)
+}

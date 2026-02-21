@@ -122,3 +122,17 @@ button {
     justify-content: center;
     align-items: center;
   }
+
+  #cross_placement{
+    display: grid;
+    grid-template-areas: 
+    ".  up   ."
+    "left . right"
+    ". down  .";
+    gap: 10px;
+   justify-content:center;
+  }
+  #up {grid-area: up;}
+  #down {grid-area: down;}
+  #left {grid-area: left;}
+  #right {grid-area: right;}

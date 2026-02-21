@@ -14,7 +14,7 @@ setInterval(() => {
         execute();
        
     }
-},10000);
+}, 10000);
 
 //before game the controls for buttons in the web.
 const button = document.getElementById('mybutton');
@@ -94,6 +94,33 @@ document.addEventListener("keydown", (e) =>{
 
 setInterval(game, 1000/15);
 
+
+    const control_up = document.getElementById("up");
+control_up.addEventListener('click',()=>{
+   if(yv !== 1){
+     xv=0;yv=-1;};
+});
+
+    const control_left = document.getElementById("left");
+control_left.addEventListener('click',()=>{
+  if(xv !== 1){
+     xv=-1;yv=0;};
+});
+    const control_right = document.getElementById("right");
+control_right.addEventListener('click',()=>{
+    if(xv !== -1){
+    xv=1;yv=0;};
+});
+    const control_down = document.getElementById("down");
+control_down.addEventListener('click',()=>{
+    if(yv !== -1){
+     xv=0;yv=1;};
+   
+});
+
+
+
+
    
     const alt =document.getElementById("pause");
  
@@ -135,7 +162,4 @@ cats.addEventListener('click',() => {
      };
 
 });
-
-
-
 

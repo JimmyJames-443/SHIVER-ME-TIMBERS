@@ -6,7 +6,15 @@ let xv=0,  yv=0;
 let trail = [];
 let tail=5;
 let stop=false;
+let no_cats=true;
 
+setInterval(() => {
+
+     if(!no_cats){
+        execute();
+       
+    }
+},10000);
 
 //before game the controls for buttons in the web.
 const button = document.getElementById('mybutton');
@@ -99,5 +107,35 @@ setInterval(game, 1000/15);
   }
  alt.addEventListener('click',statue)
 
- 
+function execute(){
+fetch("https://api.thecatapi.com/v1/images/search")
+.then(res => res.json())
+.then(data  => {
+    //golden code
+    document.getElementById("cat_image").src = data[0].url;
+});
+};
+
+
+
+const cats = document.getElementById("api");
+cats.addEventListener('click',() => {
+
+    no_cats = !no_cats;
+
+    if(!no_cats){
+        execute();
+        cats.textContent="see no cats";
+    }
+    else{
+        
+        document.getElementById("cat_image").remove();
+        alert("your unfriendly approach to the cats has led to their permanent removal");
+        console.log("you is a bitch for real.")
+     };
+
+});
+
+
+
 
